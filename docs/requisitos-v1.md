@@ -35,7 +35,7 @@ Para la versión 1.0 de Asgard Pets el sistema debe:
 
 - Actualizar la cantidad de un producto.
 
-- Calcular el valor total del inventario.
+- Calcular el valor total de un producto.
 
 ## Restricciones
 
