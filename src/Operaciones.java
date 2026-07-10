@@ -7,6 +7,8 @@ public class Operaciones {
     static double precios[] = new double[capacidad];
     static int cantidad[] = new int[capacidad];
     static String tipo[] = new String[capacidad];
+    static int id [] = new int[capacidad];
+    static int contadorId = 1;
 
     static boolean hayProducto = false;
     static int productosRegistrados = 0;
@@ -28,6 +30,7 @@ public class Operaciones {
             precios[productosRegistrados] = Validador.leerDouble(sc, "Ingrese el precio: ");
             cantidad[productosRegistrados] = Validador.leerEntero(sc, "Ingrese la cantidad: ");
             tipo[productosRegistrados] = Validador.leerTexto(sc, "Para que animal es (perro, gato, ave): ");
+            id[productosRegistrados] = contadorId++;
             productosRegistrados++;
             hayProducto = true;
             System.out.println();
@@ -67,6 +70,7 @@ public class Operaciones {
             System.out.println();
             for (int i = 0; i < productosRegistrados; i++){
                 System.out.println("=================================");
+                System.out.println("ID: #" + id[i]);
                 System.out.println("Producto: " + nombres[i]);
                 System.out.println("Precio: " + precios[i]);
                 System.out.println("Cantidad: " + cantidad[i]);
@@ -130,6 +134,34 @@ public class Operaciones {
         }
     }
 
+    // 6. Eliminar un producto
+    public static void eliminarProducto(Scanner sc){
+        if (noHayProducto()){
+            return;
+        } else {
+            int idEliminar = Validador.leerEntero(sc, "Ingrese el ID del producto que desea eliminar: ");
+            boolean existeID = false;
+            int posicionAEliminar = 0;
+            for (int i = 0; i < productosRegistrados; i++){
+                if (idEliminar == id[i]){
+                    posicionAEliminar = i;
+                    existeID = true;
+                    break;
+                }
+            }
+            if(existeID){
+                for(int i = posicionAEliminar; i < productosRegistrados -1; i++){
+                    id[i] = id[i+1];
+                    nombres[i] = nombres[i+1];
+                    precios[i] = precios[i+1];
+                    cantidad[i] = cantidad[i+1];
+                    tipo[i] = tipo[i+1];
+                }
+                productosRegistrados--;
+                System.out.println("Se ha eliminado correctamente el producto con ID #" + idEliminar);
 
+            }
+        }
+    }
 
 }
