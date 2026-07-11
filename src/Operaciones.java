@@ -164,4 +164,29 @@ public class Operaciones {
         }
     }
 
+    // 7. Mostrar productos agotados
+    public static void mostrarProductosAgotados(){
+        if (noHayProducto()){
+            return;
+        } else {
+            System.out.println("***** PRODUCTOS AGOTADOS *****");
+            boolean productosAgotados = false;
+            for (int i = 0; i < productosRegistrados; i++){
+                if (cantidad[i] == 0){
+                    productosAgotados = true;
+                    System.out.println("=================================");
+                    System.out.println("ID: #" + id[i]);
+                    System.out.println("Producto: " + nombres[i]);
+                    System.out.println("Precio: " + precios[i]);
+                    System.out.println("Cantidad: " + cantidad[i]);
+                    System.out.println("Animal: " + tipo[i]);
+                    System.out.println("=================================");
+                    System.out.println();
+                }
+            }
+            if (!productosAgotados){
+                System.out.println("Ningun producto esta agotado");
+            }
+        }
+    }
 }

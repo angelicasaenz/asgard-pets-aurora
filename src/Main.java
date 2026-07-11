@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int opcion = 0;
-        while (opcion != 7){
+        while (opcion != 8){
             Menu.mostrar();
             opcion = Menu.leerOpcion(sc);
             switch (opcion) {
@@ -29,6 +29,9 @@ public class Main {
                     Operaciones.eliminarProducto(sc);
                     break;
                 case 7:
+                    Operaciones.mostrarProductosAgotados();
+                    break;
+                case 8:
                     System.out.println("Gracias por utilizar el gestor de inventario de Asgard Pets, hasta pronto!");
                     break;
                 default:

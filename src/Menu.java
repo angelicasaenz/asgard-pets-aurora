@@ -13,7 +13,8 @@ public class Menu {
                 4. Actualizar cantidad de un producto.
                 5. Calcular total de un producto.
                 6. Eliminar un producto del inventario.
-                7. Salir del gestor.
+                7. Mostrar productos agotados.
+                8. Salir del gestor.
                 """);
     }
 
