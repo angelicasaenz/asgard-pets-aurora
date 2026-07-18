@@ -8,12 +8,15 @@ El objetivo de este proyecto es evolucionar gradualmente mientras aprendo nuevas
 
 ---
 
-## 📖 Versión actual
+## 📖 Estado del proyecto
 
-**v1.0 - Sistema de Inventario (Java Básico)**
+### ✅ v1.0 - Sistema de Inventario (Finalizada)
 
-En esta primera versión se desarrolla un sistema de consola para gestionar el inventario de productos de Asgard Pets.
+Sistema de inventario desarrollado con Java básico utilizando arreglos y programación estructurada.
 
+### 🔨 v2.0 - Programación Orientada a Objetos (En desarrollo)
+
+Actualmente el proyecto está siendo reestructurado aplicando Programación Orientada a Objetos para construir un sistema más modular y escalable.
 ### Funcionalidades
 
 - Registrar productos.
@@ -31,27 +34,40 @@ En esta primera versión se desarrolla un sistema de consola para gestionar el i
 - IntelliJ IDEA
 - Git
 - GitHub
+-  Markdown
+- StarUML
 
 ---
 
 ## 📚 Conceptos aplicados
 
+### ✅ v1.0
+
 - Variables
 - Constantes
 - Métodos
 - Scanner
-- Estructuras condicionales (`if` y `switch`)
-- Ciclos (`for`, `while` y `do-while`)
+- Condicionales
+- Ciclos
 - Arreglos
-- Métodos reutilizables
 - Validación de datos
 
+### 🔨 v2.0 (En progreso)
+
+- Programación Orientada a Objetos
+- Encapsulamiento
+- Herencia
+- Polimorfismo
+- Sobrescritura
+- Sobrecarga
+- Clases abstractas
+- Interfaces
 ---
 
 ## 🚀 Roadmap
 
 - ✅ v1.0 - Sistema de inventario
-- ⬜ v2.0 - Programación Orientada a Objetos
+- 🔨 v2.0 - Programación Orientada a Objetos
 - ⬜ v3.0 - Colecciones (ArrayList)
 - ⬜ v4.0 - Persistencia de datos
 - ⬜ v5.0 - Base de datos SQL
@@ -60,6 +76,13 @@ En esta primera versión se desarrolla un sistema de consola para gestionar el i
 - ⬜ v8.0 - Aplicación web
 
 ---
+## 📂 Documentación
+
+Toda la documentación del proyecto se encuentra en la carpeta `docs`.
+
+- Requerimientos v1.0
+- Requerimientos v2.0
+- Diagrama de clases (UML)
 
 ## 🎯 Objetivo
 
