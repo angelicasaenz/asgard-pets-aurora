@@ -1,6 +1,6 @@
 Versión: 1.0
 
-Estado: En desarrollo
+Estado: Finalizado
 
 Fecha:07/07/2026
 # Requerimientos - Asgard Pets v1.0
